@@ -5,22 +5,22 @@ GoalTrip es una agencia de viajes ficticia especializada en paquetes para asisti
 **Mundial de Fútbol 2026** (USA, Canadá y México).
 
 ## 🌐 Demo en vivo
-[Ver en GitHub Pages](https://tu-usuario.github.io/taller4/)
+[Ver en GitHub Pages](https://johndaviddiax-ai.github.io/taller_final4/)
 
 ## 📁 Estructura del proyecto
 
 ```
 taller4/
-├── index.html              ← Landing Page principal
+├── index.html              
 ├── README.md
 ├── assets/
-│   └── img/                ← Imágenes y logos propios (si se agregan)
+│   └── img/                
 └── app/
-    ├── login.html          ← Inicio de sesión
-    ├── registro.html       ← Registro de usuario
-    ├── recuperar.html      ← Recuperar contraseña
-    ├── admin.html          ← Dashboard Administrativo
-    └── cliente.html        ← Dashboard Cliente/Expositor
+    ├── login.html          
+    ├── registro.html       
+    ├── recuperar.html      
+    ├── admin.html          
+    └── cliente.html       
 ```
 
 ## 🛠️ Tecnologías usadas
@@ -28,20 +28,18 @@ taller4/
 - **Bootstrap 5.3.3** (vía CDN)
 - **Bootstrap Icons 1.11.3**
 - HTML5 semántico
-- Sin CSS personalizado
-- JavaScript únicamente con `bootstrap.bundle.min.js` + scripts propios cortos para
-  dar funcionalidad real a formularios, modal y tabla (sin frameworks ni librerías externas)
+- JavaScript únicamente con `bootstrap.bundle.min.js` + scripts propios
 
 ## 📄 Páginas
 
 | Página | Descripción |
 |--------|-------------|
 | `index.html` | Landing Page con navbar (incluye menú **Cliente**), carrusel, cards de paquetes, sedes, beneficios, contacto y footer |
-| `app/login.html` | Inicio de sesión con `form-floating` y validación funcional (campos requeridos + redirección a `cliente.html`) |
-| `app/registro.html` | Registro con grid de campos en filas, validación de contraseñas coincidentes y términos obligatorios |
+| `app/login.html` | Inicio de sesión con `form-floating` y validación funcional (campos requeridos más redirección a `cliente.html`) |
+| `app/registro.html` | Registro con grid de campos en filas, validación de contraseñas y términos obligatorios |
 | `app/recuperar.html` | Recuperación con validación visual dinámica `is-valid` / `is-invalid` según el correo ingresado |
-| `app/admin.html` | Dashboard admin con sidebar, tabla de participantes, búsqueda en vivo, modal de edición **funcional** (carga y guarda datos reales de cada fila) y eliminación con confirmación |
-| `app/cliente.html` | Dashboard cliente con perfil, tabs, alertas y botón **Pagar ahora** que actualiza el estado de la reserva en tiempo real |
+| `app/admin.html` | Dashboard admin con sidebar, tabla de participantes, búsqueda en vivo, modal de edición **funcional** y eliminación con confirmación |
+| `app/cliente.html` | Dashboard cliente con perfil, alerta y botón **Pagar ahora** que actualiza el estado de la reserva en tiempo real |
 
 ## ✨ Funcionalidades destacadas
 
