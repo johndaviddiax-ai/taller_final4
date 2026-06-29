@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoalTrip 2026 – Vive el Mundial</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="index.html">
+        <i class="bi bi-trophy-fill text-warning me-2"></i>GoalTrip 2026
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html"><i
+                class="bi bi-house-fill me-1"></i>Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#paquetes"><i class="bi bi-airplane-fill me-1"></i>Paquetes</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#destinos"><i class="bi bi-geo-alt-fill me-1"></i>Destinos</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#contacto"><i class="bi bi-envelope-fill me-1"></i>Contacto</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-person-circle me-1"></i>Cliente
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="app/cliente.html"><i class="bi bi-grid-fill me-2 text-success"></i>Mi
+                  panel</a></li>
+              <li><a class="dropdown-item" href="app/login.html"><i
+                    class="bi bi-box-arrow-in-right me-2 text-success"></i>Iniciar sesión</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="app/admin.html"><i
+                    class="bi bi-shield-fill-check me-2 text-secondary"></i>Panel administrativo</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="btn btn-warning fw-bold ms-lg-2" href="app/registro.html"><i
+                class="bi bi-ticket-perforated-fill me-1"></i>Reservar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO / CARRUSEL ========== -->
+  <div style="margin-top:56px;">
+    <div id="carruselMundial" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carruselMundial" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carruselMundial" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carruselMundial" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1400&q=80" class="d-block w-100"
+            style="height:620px;object-fit:cover;" alt="Estadio Mundial" />
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+            <h1 class="display-4 fw-bold text-warning"><i class="bi bi-trophy-fill me-2"></i>Mundial 2026</h1>
+            <p class="lead">Vive la Copa del Mundo en USA, Canadá y México. El evento más grande del planeta.</p>
+            <a href="app/registro.html" class="btn btn-primary btn-lg px-4 me-2">
+              <i class="bi bi-ticket-perforated-fill me-2"></i>Reserva tu viaje
+            </a>
+            <a href="#paquetes" class="btn btn-outline-light btn-lg px-4">Ver paquetes</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="assets/img/imagen3.jpg" class="d-block w-100" style="height:620px;object-fit:cover;"
+            alt="Estadio Mundial" />
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+            <h1 class="display-4 fw-bold text-warning"><i class="bi bi-geo-alt-fill me-2"></i>16 Sedes</h1>
+            <p class="lead">Nueva York, Los Ángeles, Ciudad de México, Toronto y más ciudades anfitrionas.</p>
+            <a href="#destinos" class="btn btn-primary btn-lg px-4 me-2">
+              <i class="bi bi-map-fill me-2"></i>Ver destinos
+            </a>
+            <a href="app/login.html" class="btn btn-outline-light btn-lg px-4">Mi cuenta</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="assets/img/carrusel-1-estadio.jpg" class="d-block w-100" style="height:620px;object-fit:cover;"
+            alt="Estadio Mundial" />
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+            <h1 class="display-4 fw-bold text-warning"><i class="bi bi-star-fill me-2"></i>Experiencia VIP</h1>
+            <p class="lead">Paquetes todo incluido con hospedaje, vuelos, entradas y tours exclusivos.</p>
+            <a href="app/registro.html" class="btn btn-primary btn-lg px-4 me-2">
+              <i class="bi bi-gem me-2"></i>Paquete VIP
+            </a>
+            <a href="#contacto" class="btn btn-outline-light btn-lg px-4">Contáctanos</a>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carruselMundial" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carruselMundial" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========== BANNER ESTADÍSTICAS ========== -->
+  <div class="bg-success text-white py-4">
+    <div class="container">
+      <div class="row text-center g-3">
+        <div class="col-6 col-md-3">
+          <h2 class="fw-bold display-5">48</h2>
+          <p class="mb-0"><i class="bi bi-flag-fill me-1"></i>Equipos</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2 class="fw-bold display-5">16</h2>
+          <p class="mb-0"><i class="bi bi-building me-1"></i>Sedes</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2 class="fw-bold display-5">104</h2>
+          <p class="mb-0"><i class="bi bi-calendar-event me-1"></i>Partidos</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2 class="fw-bold display-5">3</h2>
+          <p class="mb-0"><i class="bi bi-globe-americas me-1"></i>Países</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== PAQUETES DE VIAJE (CARDS) ========== -->
+  <section id="paquetes" class="py-5 bg-light">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col text-center">
+          <h2 class="fw-bold"><i class="bi bi-airplane-fill text-success me-2"></i>Nuestros Paquetes</h2>
+          <p class="text-muted lead">Escoge el plan perfecto para vivir el Mundial 2026</p>
+        </div>
+      </div>
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow border-0">
+            <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=600&q=80" class="card-img-top"
+              style="height:200px;object-fit:cover;" alt="Paquete Básico" />
+            <div class="card-body">
+              <span class="badge bg-secondary mb-2">Básico</span>
+              <h5 class="card-title fw-bold">Paquete Fanático</h5>
+              <p class="card-text text-muted">Vuelo de ida y vuelta, hospedaje 3★ por 7 noches y 3 entradas en fase de
+                grupos.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Vuelo incluido</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Hotel 3 estrellas</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>3 partidos de grupos</li>
+                <li><i class="bi bi-x-circle-fill text-danger me-2"></i>Tour de estadios</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fs-4 fw-bold text-success">$2.800 USD</span>
+                <a href="app/registro.html" class="btn btn-outline-success">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow border-success border-2">
+            <div class="card-header bg-success text-white text-center fw-bold">
+              <i class="bi bi-star-fill me-1"></i>MÁS POPULAR
+            </div>
+            <img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=600&q=80" class="card-img-top"
+              style="height:200px;object-fit:cover;" alt="Paquete Plus" />
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Plus</span>
+              <h5 class="card-title fw-bold">Paquete Goleador</h5>
+              <p class="card-text text-muted">Todo lo del Básico más entradas hasta cuartos de final, traslados y seguro
+                de viaje.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Vuelo incluido</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Hotel 4 estrellas</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Hasta cuartos de final</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Seguro de viaje</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fs-4 fw-bold text-success">$4.500 USD</span>
+                <a href="app/registro.html" class="btn btn-success">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow border-0">
+            <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&q=80" class="card-img-top"
+              style="height:200px;object-fit:cover;" alt="Paquete VIP" />
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">VIP</span>
+              <h5 class="card-title fw-bold">Paquete Campeón</h5>
+              <p class="card-text text-muted">Experiencia premium: vuelo business, hotel 5★, entradas hasta la final y
+                tour exclusivo.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Vuelo Business</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Hotel 5 estrellas</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Hasta la Gran Final</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Tour VIP de estadios</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fs-4 fw-bold text-warning">$9.200 USD</span>
+                <a href="app/registro.html" class="btn btn-warning text-dark fw-bold">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DESTINOS ========== -->
+  <section id="destinos" class="py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col text-center">
+          <h2 class="fw-bold"><i class="bi bi-geo-alt-fill text-success me-2"></i>Ciudades Sede</h2>
+          <p class="text-muted lead">Explora las sedes del Mundial 2026</p>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="card text-center h-100 border-0 shadow-sm">
+            <div class="card-body py-4">
+              <i class="bi bi-buildings-fill text-success fs-1"></i>
+              <h6 class="fw-bold mt-2 mb-0">Nueva York</h6>
+              <small class="text-muted">🇺🇸 USA</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="card text-center h-100 border-0 shadow-sm">
+            <div class="card-body py-4">
+              <i class="bi bi-sun-fill text-warning fs-1"></i>
+              <h6 class="fw-bold mt-2 mb-0">Los Ángeles</h6>
+              <small class="text-muted">🇺🇸 USA</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="card text-center h-100 border-0 shadow-sm">
+            <div class="card-body py-4">
+              <i class="bi bi-flag-fill text-danger fs-1"></i>
+              <h6 class="fw-bold mt-2 mb-0">Cdad. de México</h6>
+              <small class="text-muted">🇲🇽 México</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="card text-center h-100 border-0 shadow-sm">
+            <div class="card-body py-4">
+              <i class="bi bi-snow2 text-info fs-1"></i>
+              <h6 class="fw-bold mt-2 mb-0">Toronto</h6>
+              <small class="text-muted">🇨🇦 Canadá</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="card text-center h-100 border-0 shadow-sm">
+            <div class="card-body py-4">
+              <i class="bi bi-music-note-beamed text-success fs-1"></i>
+              <h6 class="fw-bold mt-2 mb-0">Dallas</h6>
+              <small class="text-muted">🇺🇸 USA</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="card text-center h-100 border-0 shadow-sm">
+            <div class="card-body py-4">
+              <i class="bi bi-water text-primary fs-1"></i>
+              <h6 class="fw-bold mt-2 mb-0">Vancouver</h6>
+              <small class="text-muted">🇨🇦 Canadá</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== POR QUÉ ELEGIRNOS ========== -->
+  <section class="py-5 bg-success text-white">
+    <div class="container">
+      <div class="row mb-4 text-center">
+        <div class="col">
+          <h2 class="fw-bold"><i class="bi bi-shield-check me-2"></i>¿Por qué GoalTrip?</h2>
+        </div>
+      </div>
+      <div class="row g-4 text-center">
+        <div class="col-12 col-md-3">
+          <i class="bi bi-patch-check-fill fs-1 text-warning mb-3 d-block"></i>
+          <h5 class="fw-bold">Entradas Garantizadas</h5>
+          <p class="mb-0">Acceso oficial a los mejores partidos del torneo.</p>
+        </div>
+        <div class="col-12 col-md-3">
+          <i class="bi bi-headset fs-1 text-warning mb-3 d-block"></i>
+          <h5 class="fw-bold">Soporte 24/7</h5>
+          <p class="mb-0">Asistencia en español durante todo tu viaje.</p>
+        </div>
+        <div class="col-12 col-md-3">
+          <i class="bi bi-wallet2 fs-1 text-warning mb-3 d-block"></i>
+          <h5 class="fw-bold">Mejor Precio</h5>
+          <p class="mb-0">Garantizamos el precio más bajo del mercado.</p>
+        </div>
+        <div class="col-12 col-md-3">
+          <i class="bi bi-arrow-repeat fs-1 text-warning mb-3 d-block"></i>
+          <h5 class="fw-bold">Cancelación Flexible</h5>
+          <p class="mb-0">Cancela sin costo hasta 30 días antes del viaje.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section id="contacto" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col text-center">
+          <h2 class="fw-bold"><i class="bi bi-envelope-fill text-success me-2"></i>Contáctanos</h2>
+          <p class="text-muted">¿Tienes dudas? Escríbenos y te respondemos en menos de 24 horas.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <div class="card shadow border-0">
+            <div class="card-body p-4">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="nombreContacto" placeholder="Tu nombre" />
+                    <label for="nombreContacto"><i class="bi bi-person me-1"></i>Nombre</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="emailContacto" placeholder="correo@ejemplo.com" />
+                    <label for="emailContacto"><i class="bi bi-envelope me-1"></i>Correo electrónico</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" id="mensajeContacto" placeholder="Mensaje"
+                      style="height:120px"></textarea>
+                    <label for="mensajeContacto"><i class="bi bi-chat-text me-1"></i>Mensaje</label>
+                  </div>
+                </div>
+                <div class="col-12 text-end">
+                  <button class="btn btn-success btn-lg px-5">
+                    <i class="bi bi-send-fill me-2"></i>Enviar mensaje
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <h5 class="fw-bold text-warning"><i class="bi bi-trophy-fill me-2"></i>GoalTrip 2026</h5>
+          <p class="text-secondary">La agencia de viajes oficial para vivir el Mundial de Fútbol 2026 en USA, Canadá y
+            México.</p>
+          <div class="d-flex gap-3 fs-4">
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" class="text-light"><i
+                class="bi bi-tiktok"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="text-light"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="text-light"><i
+                class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="fw-bold text-warning mb-3">Navegación</h6>
+          <ul class="list-unstyled">
+            <li class="mb-1"><a href="index.html" class="text-secondary text-decoration-none">Inicio</a></li>
+            <li class="mb-1"><a href="#paquetes" class="text-secondary text-decoration-none">Paquetes</a></li>
+            <li class="mb-1"><a href="#destinos" class="text-secondary text-decoration-none">Destinos</a></li>
+            <li class="mb-1"><a href="#contacto" class="text-secondary text-decoration-none">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="fw-bold text-warning mb-3">Mi Cuenta</h6>
+          <ul class="list-unstyled">
+            <li class="mb-1"><a href="app/login.html" class="text-secondary text-decoration-none">Iniciar Sesión</a>
+            </li>
+            <li class="mb-1"><a href="app/registro.html" class="text-secondary text-decoration-none">Registrarse</a>
+            </li>
+            <li class="mb-1"><a href="app/recuperar.html" class="text-secondary text-decoration-none">Recuperar
+                Contraseña</a></li>
+            <li class="mb-1"><a href="app/cliente.html" class="text-secondary text-decoration-none">Mi Panel</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h6 class="fw-bold text-warning mb-3">Contacto</h6>
+          <p class="text-secondary mb-1"><i class="bi bi-telephone-fill me-2 text-success"></i>+57 3170949680</p>
+          <p class="text-secondary mb-1"><i class="bi bi-envelope-fill me-2 text-success"></i>johndaviddiax@gmail.com</p>
+          <p class="text-secondary mb-1"><i class="bi bi-geo-alt-fill me-2 text-success"></i>Medellín, Colombia</p>
+          <p class="text-secondary mb-0"><i class="bi bi-clock-fill me-2 text-success"></i>Lun – Sáb: 8am – 8pm</p>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4" />
+      <div class="row">
+        <div class="col text-center text-secondary small">
+          &copy; 2026 GoalTrip. Todos los derechos reservados. 
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
