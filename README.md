@@ -1,26 +1,27 @@
-# 🏆 GoalTrip 2026 – Taller Final Bootstrap
+# 🏆 GoalTrip 2026
 
-Proyecto desarrollado con **Bootstrap 5** para el Taller Final de Html + Bootstrap + Git.
-GoalTrip es una agencia de viajes ficticia especializada en paquetes para asistir al
-**Mundial de Fútbol 2026** (USA, Canadá y México).
+**Agencia de viajes ficticia especializada en paquetes turísticos para el Mundial de Fútbol 2026** (USA, Canadá y México).
+
+Proyecto desarrollado para el Taller Final de **Html + Bootstrap + Git** (SENA), construido íntegramente con **Bootstrap 5**, sin CSS personalizado.
 
 ## 🌐 Demo en vivo
+
 [Ver en GitHub Pages](https://johndaviddiax-ai.github.io/taller_final4/)
 
 ## 📁 Estructura del proyecto
 
 ```
 taller4/
-├── index.html              
+├── index.html            
 ├── README.md
 ├── assets/
 │   └── img/                
 └── app/
-    ├── login.html          
-    ├── registro.html       
-    ├── recuperar.html      
-    ├── admin.html          
-    └── cliente.html       
+    ├── login.html           
+    ├── registro.html        
+    ├── recuperar.html       
+    ├── admin.html           
+    └── cliente.html         
 ```
 
 ## 🛠️ Tecnologías usadas
@@ -28,39 +29,62 @@ taller4/
 - **Bootstrap 5.3.3** (vía CDN)
 - **Bootstrap Icons 1.11.3**
 - HTML5 semántico
-- Único script del proyecto: `bootstrap.bundle.min.js` (sin JavaScript personalizado adicional)
+- Único script del proyecto: `bootstrap.bundle.min.js`, sin JavaScript personalizado adicional
 
 ## 📄 Páginas
 
-| Página | Descripción |
-|--------|-------------|
-| `index.html` | Landing Page con navbar fija (`fixed-top`) con menú hamburguesa, carrusel de 3 imágenes con `carousel-caption` y botones de acción, sección de cards con paquetes y sedes, sección "Por qué GoalTrip", formulario de contacto y footer en columnas |
-| `app/login.html` | Inicio de sesión con `form-floating`, checkbox "Recordarme", botón de ancho completo y enlaces a registro/recuperación |
-| `app/registro.html` | Registro con grid de campos en filas (`row`, `col-md-6`), checkbox de términos y condiciones |
-| `app/recuperar.html` | Recuperación de contraseña con estructura de validación visual de Bootstrap (`is-valid` / `is-invalid`) |
-| `app/admin.html` | Dashboard admin con sidebar, 4 tarjetas de métricas, tabla de participantes con badges contextuales y botones de Editar/Eliminar, y modal de Bootstrap con formulario de edición |
-| `app/cliente.html` | Dashboard cliente con panel de perfil, resumen de reservas, pestañas (Activas/Historial) y alerta dismissible |
+### `index.html` — Landing Page
+Carta de presentación del sitio. Incluye:
+- Navbar fija (`fixed-top`) con menú hamburguesa responsivo
+- Carrusel (`carousel-fade`) de 3 imágenes con `carousel-caption` y botones de acción
+- Banner de estadísticas del torneo (equipos, sedes, partidos, países)
+- Sección de cards con paquetes de viaje
+- Sección de sedes/destinos
+- Sección "¿Por qué GoalTrip?"
+- Formulario de contacto con `form-floating`
+- Footer oscuro estructurado en columnas
+
+### `app/login.html` — Inicio de sesión
+Formulario centrado en card con `form-floating`, campos de correo y contraseña, checkbox "Recordarme", botón de ancho completo (`w-100`) y enlaces a registro y recuperación de contraseña.
+
+### `app/registro.html` — Registro
+Formulario extenso organizado con `row` / `col-md-6`: Nombre y Apellidos en una fila, Correo y Teléfono en otra, además de contraseña, país de origen y paquete de interés. Incluye checkbox de aceptación de términos y condiciones.
+
+### `app/recuperar.html` — Recuperación de contraseña
+Formulario simple con validación visual estática de Bootstrap (`is-invalid` / `invalid-feedback`) que demuestra cómo se vería un error de "correo no encontrado".
+
+### `app/admin.html` — Dashboard administrativo
+Panel con sidebar lateral (oculta en móvil) y:
+- 4 tarjetas de métricas clave (Total Inscritos, Ingresos, Reservas Activas, Pendientes) con `badge`
+- Tabla de participantes (`table-striped`, `table-hover`, `table-responsive`) con columnas ID, Nombre, Categoría y Estado
+- Etiquetas contextuales de estado (Aprobado, Pendiente, Rechazado, En revisión)
+- Botones de acción `btn-sm` para Editar y Eliminar
+- Modal de Bootstrap con formulario prellenado para editar participantes
+
+### `app/cliente.html` — Dashboard de cliente
+Panel con sidebar y:
+- Sección de perfil con foto (`rounded-circle`) y datos básicos del usuario
+- Tarjetas resumen de reservas, entradas, pagos y próximo partido
+- Sistema de pestañas (`nav-tabs`) para alternar entre "Inscripciones Activas" e "Historial"
+- Alerta `dismissible` recordando subir documentos de viaje
 
 ## ✨ Funcionalidades destacadas
 
-- **Navbar con sección Cliente**: dropdown que enlaza a `app/cliente.html`, `app/login.html` y `app/admin.html`.
-- **Carrusel** con `carousel-fade`, indicadores y controles de navegación.
-- **Modal de Bootstrap** en el panel admin que se abre con el botón "Editar" y muestra un formulario con datos de ejemplo.
-- **Sistema de pestañas** (`nav-tabs`) en el panel cliente para alternar entre reservas activas e historial.
-- **Alerta dismissible** en el panel cliente recordando subir documentos de viaje.
-- **Estructura responsiva completa** usando el Grid System de Bootstrap (`container`, `row`, `col`) en todas las páginas.
+- Navegación completa entre todas las páginas del sitio, incluyendo dropdown "Cliente" en el navbar de la landing page
+- Estructura 100% responsiva con el Grid System de Bootstrap (`container`, `row`, `col`) en todas las páginas
+- Componentes nativos de Bootstrap activados mediante atributos `data-bs-*` (modales, tabs, dropdowns, alertas dismissibles), sin scripts personalizados
 
 ## ⚠️ Estado actual / pendientes
 
-Este proyecto utiliza únicamente los componentes nativos de Bootstrap (modales, tabs, dropdowns, collapse, validación visual estática) que funcionan a través de atributos `data-bs-*`, sin scripts personalizados. Por lo tanto, **aún no cuenta con lógica propia en JavaScript**, lo que significa que las siguientes interacciones todavía no son funcionales y quedan como mejora pendiente:
+El proyecto utiliza únicamente los componentes nativos de Bootstrap, por lo que aún no cuenta con lógica propia en JavaScript. Quedan como mejora pendiente:
 
-- Validación dinámica y redirección real en `login.html`.
-- Mensaje de éxito dinámico al enviar `registro.html`.
-- Validación dinámica del correo en `recuperar.html` (actualmente solo están las clases base de Bootstrap, sin comparación real de datos).
-- Búsqueda en vivo sobre la tabla de `admin.html`.
-- Carga dinámica de datos por fila y guardado de cambios en el modal de edición de `admin.html`.
-- Eliminación de filas con confirmación en `admin.html`.
-- Cambio de estado de la reserva al pulsar "Pagar ahora" en `cliente.html`.
+- Validación dinámica y redirección real en `login.html`
+- Mensaje de éxito dinámico al enviar `registro.html`
+- Validación dinámica del correo en `recuperar.html` (actualmente solo clases base de Bootstrap, sin comparación real de datos)
+- Búsqueda en vivo sobre la tabla de `admin.html`
+- Carga dinámica de datos y guardado de cambios en el modal de edición de `admin.html`
+- Eliminación de filas con confirmación en `admin.html`
+- Cambio de estado de la reserva al pulsar "Pagar ahora" en `cliente.html`
 
 ## 🚀 Despliegue en GitHub Pages
 
