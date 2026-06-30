@@ -39,14 +39,14 @@
           Ingresa el correo con el que te registraste y te enviaremos las instrucciones para restablecer tu contraseña.
         </p>
 
-        <!-- Demo funcional: prueba con juan.perez@goaltrip.com (válido) o cualquier otro correo (no encontrado) -->
         <div class="mb-1">
           <div class="form-floating">
             <input
               type="email"
-              class="form-control"
+              class="form-control is-invalid"
               id="correoRecuperar"
               placeholder="correo@ejemplo.com"
+              value="correo_no_registrado@ejemplo.com"
             />
             <label for="correoRecuperar"><i class="bi bi-envelope me-1"></i>Correo electrónico</label>
             <div class="invalid-feedback d-flex align-items-center" id="feedbackInvalido">
@@ -59,11 +59,6 @@
             </div>
           </div>
         </div>
-
-        <p class="small text-muted mt-2 mb-4">
-          <i class="bi bi-info-circle me-1"></i>Demo: prueba con
-          <code>juan.perez@goaltrip.com</code> para ver la validación correcta.
-        </p>
 
         <button class="btn btn-warning w-100 btn-lg fw-bold text-dark mb-3" id="btnEnviar">
           <i class="bi bi-send-fill me-2"></i>Enviar enlace de recuperación
