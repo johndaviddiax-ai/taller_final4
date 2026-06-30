@@ -29,7 +29,7 @@ taller4/
 - **Bootstrap 5.3.3** (vía CDN)
 - **Bootstrap Icons 1.11.3**
 - HTML5 semántico
-- Único script del proyecto: `bootstrap.bundle.min.js`, sin JavaScript personalizado adicional
+- Único script del proyecto: `bootstrap.bundle.min.js`
 
 ## 📄 Páginas
 
@@ -73,18 +73,6 @@ Panel con sidebar y:
 - Navegación completa entre todas las páginas del sitio, incluyendo dropdown "Cliente" en el navbar de la landing page
 - Estructura 100% responsiva con el Grid System de Bootstrap (`container`, `row`, `col`) en todas las páginas
 - Componentes nativos de Bootstrap activados mediante atributos `data-bs-*` (modales, tabs, dropdowns, alertas dismissibles), sin scripts personalizados
-
-## ⚠️ Estado actual / pendientes
-
-El proyecto utiliza únicamente los componentes nativos de Bootstrap, por lo que aún no cuenta con lógica propia en JavaScript. Quedan como mejora pendiente:
-
-- Validación dinámica y redirección real en `login.html`
-- Mensaje de éxito dinámico al enviar `registro.html`
-- Validación dinámica del correo en `recuperar.html` (actualmente solo clases base de Bootstrap, sin comparación real de datos)
-- Búsqueda en vivo sobre la tabla de `admin.html`
-- Carga dinámica de datos y guardado de cambios en el modal de edición de `admin.html`
-- Eliminación de filas con confirmación en `admin.html`
-- Cambio de estado de la reserva al pulsar "Pagar ahora" en `cliente.html`
 
 ## 🚀 Despliegue en GitHub Pages
 
